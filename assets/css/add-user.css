@@ -1,0 +1,79 @@
+/* General page styles */
+body {
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container styling */
+.container {
+    max-width: 500px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Card styling */
+.card {
+    border: none;
+    border-radius: 15px;
+    background: #f8f9fa;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Form input styling */
+.form-control {
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    padding: 0.8rem;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+}
+
+/* Button styling */
+.btn {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-primary {
+    background: #4facfe;
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #00c6ff;
+    transform: scale(1.05);
+}
+
+/* Alerts */
+.alert {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* Header styling */
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+h2.text-primary {
+    color: #007bff;
+}

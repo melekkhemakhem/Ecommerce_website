@@ -1,0 +1,74 @@
+/* Base styles for the dashboard */
+body {
+    background: linear-gradient(to right, #007bff, #6610f2);
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    margin-top: 3rem;
+}
+
+.welcome-box {
+    border: 2px dashed #007bff;
+    padding: 2rem;
+    border-radius: 10px;
+    background: #f9f9f9;
+}
+
+.welcome-box h1 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.welcome-box h1 span {
+    color: #6610f2;
+    font-weight: bold;
+}
+
+.welcome-box p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.action-buttons .btn {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+}
+
+.action-buttons .btn-primary {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.action-buttons .btn-secondary {
+    background-color: #6610f2;
+    color: #fff;
+}
+
+.action-buttons .btn-success {
+    background-color: #28a745;
+    color: #fff;
+}
+
+.action-buttons .btn:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}

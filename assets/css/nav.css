@@ -1,0 +1,102 @@
+/* Base styles for navbar */
+.navbar {
+    background: linear-gradient(135deg, #007bff, #6610f2); /* Dégradé de couleurs */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    padding: 1rem;
+    border-radius: 0 0 8px 8px; /* Coins arrondis en bas */
+    position: fixed; /* Navbar fixée en haut */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* S'assure que la navbar est au-dessus des autres éléments */
+}
+
+/* Espace sous la navbar pour éviter qu'elle ne cache le contenu */
+body {
+    padding-top: 80px; /* Ajuste cette valeur en fonction de la hauteur de la navbar */
+}
+
+/* Style du logo de la navbar */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); /* Ombre pour un effet texturé */
+}
+
+/* Toggler pour les petits écrans */
+.navbar-toggler {
+    border: none;
+    background: #ffffff;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23007bff' viewBox='0 0 16 16'%3E%3Cpath d='M0 2h16v2H0zM0 8h16v2H0zM0 14h16v2H0z'/%3E%3C/svg%3E");
+    filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3)); /* Effet d'ombre pour l'icône du menu hamburger */
+}
+
+/* Liens de la navbar */
+.navbar-nav .nav-link {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+/* Lorsque le lien est actif */
+.navbar-nav .nav-link.active {
+    color: #ffc107; /* Jaune pour l'élément actif */
+    font-weight: bold;
+}
+
+/* Effet au survol des liens */
+.navbar-nav .nav-link:hover {
+    color: #ffc107;
+    transform: scale(1.1); /* Agrandit légèrement le lien au survol */
+}
+
+/* Icônes dans la navbar */
+.navbar-nav .nav-link i {
+    margin-right: 0.5rem;
+    color: #ffc107; /* Jaune pour les icônes */
+}
+
+/* Boutons flottants à droite */
+.btn.float-end {
+    background-color: #ffc107;
+    color: #000;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Effet au survol des boutons flottants */
+.btn.float-end:hover {
+    background-color: #e0a800; /* Jaune plus foncé au survol */
+    transform: scale(1.1);
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+    /* Taille du logo pour les petits écrans */
+    .navbar-brand {
+        font-size: 1.25rem;
+    }
+
+    /* Taille des liens pour les petits écrans */
+    .nav-link {
+        font-size: 0.9rem;
+    }
+
+    /* Ajuste la taille et le padding du bouton pour les petits écrans */
+    .btn.float-end {
+        font-size: 0.8rem;
+        padding: 0.4rem 0.8rem;
+    }
+}
