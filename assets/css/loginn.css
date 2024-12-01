@@ -1,79 +1,143 @@
-/* General page styles */
+/* Page générale */
 body {
-    background: linear-gradient(to right, #4facfe, #00f2fe);
-    font-family: 'Roboto', sans-serif;
-    color: #333;
-    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, rgba(0, 77, 153, 0.2), rgba(0, 191, 255, 0.2), rgba(102, 204, 255, 0.2)); /* Dégradé de fond */
+    background-size: 300% 300%;
+    animation: gradientAnimation 6s ease infinite;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0 20px;
+    border-radius: 80px;
 }
 
-/* Container styling */
+/* Conteneur principal */
 .container {
-    max-width: 500px;
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 2rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-/* Card styling */
+/* Contenu à diviser en deux */
+.content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Partie gauche (description) */
+.description {
+    flex: 1;
+    background: url('https://cdn.thewirecutter.com/wp-content/media/2024/06/drugstorebeautyproducts-2048px-2858.jpg') no-repeat center center/cover;
+    border-radius: 50px;
+    color: white;
+    padding: 3rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Effet au survol de la partie description */
+.description:hover {
+    transform: scale(1.05); /* Animation au survol pour donner un effet de zoom */
+}
+
+.description h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.description p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #f0f0f0;
+}
+
+/* Partie droite (formulaire) */
+.form-container {
+    flex: 1;
+}
+
 .card {
-    border: none;
-    border-radius: 15px;
-    background: #f8f9fa;
+    background: linear-gradient(135deg, #004d99, #00bfff21, #4cc3ff);
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     padding: 2rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
 }
 
-/* Form input styling */
+/* Effet de survol de la carte */
+.card:hover {
+    transform: scale(1.02);
+}
+
+h2.text-primary {
+    color: #007bff;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Entrées de formulaire */
 .form-control {
     border: 1px solid #ced4da;
     border-radius: 8px;
     padding: 0.8rem;
     font-size: 1rem;
+    transition: border-color 0.3s ease;
 }
 
 .form-control:focus {
-    border-color: #4facfe;
-    box-shadow: 0 0 5px rgba(79, 172, 254, 0.5);
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
 
-/* Button styling */
-.btn {
-    padding: 0.8rem 1.5rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 25px;
-    transition: all 0.3s ease-in-out;
-}
-
+/* Bouton */
 .btn-primary {
-    background: #4facfe;
+    background: #007bff;
     border: none;
     color: white;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background 0.3s ease, transform 0.3s ease;
+    margin-top: 1rem;
 }
 
 .btn-primary:hover {
-    background: #00c6ff;
+    background: #0056b3;
     transform: scale(1.05);
 }
 
-/* Alerts */
+/* Alertes */
 .alert {
-    font-size: 0.9rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
     text-align: center;
+    background-color: #f8d7da;
+    color: #721c24;
+    border-radius: 10px;
+    padding: 1rem;
 }
 
-/* Header styling */
-h2 {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #007bff;
-}
-
-h2.text-primary {
-    color: #007bff;
+/* Animation pour le fond dégradé */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
