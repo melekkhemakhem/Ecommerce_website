@@ -55,9 +55,9 @@
                 <!-- Exemple de produit -->
                 <div class="col-md-4 mb-4">
                     <div class="product-card rounded shadow-sm overflow-hidden">
-                        <img src="upload\produit\6377c776dfe8f350-1.webp" alt="Produit 1" class="product-img img-fluid">
+                        <img src="upload\produit\9896067b-a70e-4ff1-8ea6-883c8b61efdd.jpg" alt="Produit 1" class="product-img img-fluid">
                         <div class="product-info p-4">
-                            <h3 class="product-title">Produit 1</h3>
+                            <h3 class="product-title">Rouge à lèvres</h3>
                             <p class="product-price">€50.00</p>
                             <a href="#" class="btn btn-outline-primary btn-block">Acheter maintenant</a>
                         </div>
@@ -66,19 +66,20 @@
                 <!-- Répétez pour d'autres produits -->
                 <div class="col-md-4 mb-4">
                     <div class="product-card rounded shadow-sm overflow-hidden">
-                        <img src="upload\produit\6377c736816d6medium01.webp" alt="Produit 2" class="product-img img-fluid">
+                        <img src="upload\produit\674c4b76237d7944fef14-8953-453d-a9b7-3486eab22665.jpg" alt="Produit 2" class="product-img img-fluid">
                         <div class="product-info p-4">
-                            <h3 class="product-title">Produit 2</h3>
-                            <p class="product-price">€75.00</p>
+                            <h3 class="product-title">Valentino</h3>
+                            <p class="product-price">€175.00</p>
                             <a href="#" class="btn btn-outline-primary btn-block">Acheter maintenant</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4 mb-4">
                     <div class="product-card rounded shadow-sm overflow-hidden">
-                        <img src="upload\produit\6377c71941528medium01.webp" alt="Produit 3" class="product-img img-fluid">
+                        <img src="upload\produit\soin-gommage-rénovateur-chronologiste-200ml.jpg" alt="Produit 3" class="product-img img-fluid">
                         <div class="product-info p-4">
-                            <h3 class="product-title">Produit 3</h3>
+                            <h3 class="product-title">
+                            KERASTASE</h3>
                             <p class="product-price">€100.00</p>
                             <a href="#" class="btn btn-outline-primary btn-block">Acheter maintenant</a>
                         </div>
@@ -90,16 +91,28 @@
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
-        <div class="container text-center">
-            <p>&copy; <?php echo date('Y'); ?> Ecommerce. Tous droits réservés.</p>
-            <p>Développé avec ❤️ par Ameny Ayedi</p>
-            <ul class="list-inline">
-                <li class="list-inline-item"><a href="#" class="text-white">À propos</a></li>
-                <li class="list-inline-item"><a href="#" class="text-white">Contact</a></li>
-                <li class="list-inline-item"><a href="#" class="text-white">FAQ</a></li>
-            </ul>
+    <div class="container text-center">
+        <p>&copy; <?php echo date('Y'); ?> Fatouna Beauty. Tous droits réservés.</p>
+        <p>Développé avec ❤️ par Ameny Ayedi</p>
+        <ul class="list-inline">
+            <li class="list-inline-item"><a href="#" class="text-white">À propos</a></li>
+            <li class="list-inline-item"><a href="#" class="text-white">Contact</a></li>
+            <li class="list-inline-item"><a href="#" class="text-white">FAQ</a></li>
+        </ul>
+        <div class="mt-3">
+            <a href="https://www.linkedin.com/in/ameny-ayedi-4749b9250/" class="text-white me-3" target="_blank">
+                <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/amenyayedi1" class="text-white me-3" target="_blank">
+                <i class="fab fa-github"></i> GitHub
+            </a>
+            <a href="amany.ayedi@gmail.com" class="text-white">
+                <i class="fas fa-envelope"></i> Email
+            </a>
         </div>
-    </footer>
+    </div>
+</footer>
+
 
     <!-- Scripts -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
